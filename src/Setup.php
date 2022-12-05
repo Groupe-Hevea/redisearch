@@ -1,8 +1,8 @@
 <?php
 
-namespace FKRediSearch;
+namespace AllopneusRediSearch;
 
-use FKRediSearch\RedisRaw\PredisAdapter;
+use AllopneusRediSearch\RedisRaw\PredisAdapter;
 
 class Setup {
 

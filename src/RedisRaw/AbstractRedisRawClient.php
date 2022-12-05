@@ -1,6 +1,6 @@
 <?php
 
-namespace FKRediSearch\RedisRaw;
+namespace AllopneusRediSearch\RedisRaw;
 
 abstract class AbstractRedisRawClient implements RedisRawClientInterface {
 

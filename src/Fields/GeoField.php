@@ -1,6 +1,6 @@
 <?php
 
-namespace FKRediSearch\Fields;
+namespace AllopneusRediSearch\Fields;
 
 class GeoField extends AbstractField {
   use Noindex;
