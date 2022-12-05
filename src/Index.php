@@ -1,12 +1,12 @@
 <?php
 
-namespace FKRediSearch;
+namespace AllopneusRediSearch;
 
-use FKRediSearch\Fields\FieldInterface;
-use FKRediSearch\Fields\GeoField;
-use FKRediSearch\Fields\NumericField;
-use FKRediSearch\Fields\TextField;
-use FKRediSearch\Fields\TagField;
+use AllopneusRediSearch\Fields\FieldInterface;
+use AllopneusRediSearch\Fields\GeoField;
+use AllopneusRediSearch\Fields\NumericField;
+use AllopneusRediSearch\Fields\TextField;
+use AllopneusRediSearch\Fields\TagField;
 
 class Index {
 

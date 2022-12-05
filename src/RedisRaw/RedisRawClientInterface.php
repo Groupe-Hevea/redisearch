@@ -1,6 +1,6 @@
 <?php
 
-namespace FKRediSearch\RedisRaw;
+namespace AllopneusRediSearch\RedisRaw;
 
 interface RedisRawClientInterface {
   public function connect($hostname = '127.0.0.1', $port = 6379, $db = 0, $password = null): RedisRawClientInterface;

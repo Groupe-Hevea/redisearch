@@ -1,9 +1,9 @@
 <?php
 
-namespace FKRediSearch\Query;
+namespace AllopneusRediSearch\Query;
 
 use InvalidArgumentException;
-use FKRediSearch\Query\QueryBuilder;
+use AllopneusRediSearch\Query\QueryBuilder;
 
 class Query {
 
@@ -38,7 +38,7 @@ class Query {
   protected $client;
   private $indexName;
 
-  public function __construct( \FKRediSearch\RedisRaw\PredisAdapter $client, string $indexName ) {
+  public function __construct( \AllopneusRediSearch\RedisRaw\PredisAdapter $client, string $indexName ) {
     $this->client = $client;
     $this->indexName = $indexName;
   }

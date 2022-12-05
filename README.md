@@ -12,7 +12,7 @@ Then add this package to your project via `composer require front/redisearch`.
 For all kind of operations, first step is to connect to redis server:
 
 ```php
-$client = \FKRediSearch\RediSearch\Setup::connect( $server, $port, $password, 0 );
+$client = \AllopneusRediSearch\RediSearch\Setup::connect( $server, $port, $password, 0 );
 ```
 
 Default values are: `$server = '127.0.0.1'`, `$port = 6379`, `$password = null`, `$database = 0`

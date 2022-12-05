@@ -4,10 +4,10 @@
  */
 require_once  '../vendor/autoload.php';
 
-use FKRediSearch\Document;
-use FKRediSearch\Fields\GeoLocation;
-use FKRediSearch\Index;
-use FKRediSearch\Setup;
+use AllopneusRediSearch\Document;
+use AllopneusRediSearch\Fields\GeoLocation;
+use AllopneusRediSearch\Index;
+use AllopneusRediSearch\Setup;
 
 $client = Setup::connect();
 

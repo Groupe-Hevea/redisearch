@@ -1,35 +1,18 @@
 {
-  "name": "front/redisearch",
-  "description": "CMS/Framework agnostic RediSearch client",
+  "name": "allopneus/redisearch",
+  "description": "Framework for RediSearch",
   "keywords": ["redis", "redisearch"],
-  "homepage": "http://github.com/front/redisearch",
+  "homepage": "https://github.com/Groupe-Hevea/redisearch",
   "license": "MIT",
   "support": {
-      "issues": "https://github.com/front/redisearch/issues"
+      "issues": "https://github.com/Groupe-Hevea/redisearch/issues"
   },
-  "authors": [
-      {
-          "name": "Foad Yousefi",
-          "email": "foadyousefi@gmail.com",
-          "homepage": "https://frontkom.no"
-      },
-      {
-        "name": "Fábio Neves",
-        "email": "fabio@frontkom.com",
-        "homepage": "https://frontkom.com"
-      },
-      {
-        "name": "Bartosz Jarzyna",
-        "email": "bartosz@netkata.com",
-        "homepage": "https://netkata.com"
-      }
-  ],
   "autoload": {
       "psr-4": {
-          "FKRediSearch\\": "src/"
+          "AllopneusRediSearch\\": "src/"
       }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
       "predis/predis": "^1.1"
   }
