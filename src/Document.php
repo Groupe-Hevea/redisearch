@@ -1,6 +1,6 @@
 <?php
 
-namespace FKRediSearch;
+namespace AllopneusRediSearch;
 
 class Document {
 

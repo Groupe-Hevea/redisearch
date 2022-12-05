@@ -4,8 +4,8 @@
  */
 require_once  '../vendor/autoload.php';
 
-use FKRediSearch\Setup;
-use FKRediSearch\Query\Query;
+use AllopneusRediSearch\Setup;
+use AllopneusRediSearch\Query\Query;
 
 $client = Setup::connect();
 

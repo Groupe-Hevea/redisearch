@@ -1,12 +1,12 @@
 <?php
 
-namespace FKRediSearch\RedisRaw;
+namespace AllopneusRediSearch\RedisRaw;
 
 use Predis\Client;
 
 /**
  * Class PredisAdapter
- * @package FKRediSearch\RedisRaw
+ * @package AllopneusRediSearch\RedisRaw
  *
  * This class wraps the NRK client: https://github.com/nrk/predis
  */

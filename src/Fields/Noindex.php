@@ -1,6 +1,6 @@
 <?php
 
-namespace FKRediSearch\Fields;
+namespace AllopneusRediSearch\Fields;
 
 trait Noindex {
   protected $isNoindex = false;
