@@ -1,0 +1,36 @@
+{
+  "name": "front/redisearch",
+  "description": "CMS/Framework agnostic RediSearch client",
+  "keywords": ["redis", "redisearch"],
+  "homepage": "http://github.com/front/redisearch",
+  "license": "MIT",
+  "support": {
+      "issues": "https://github.com/front/redisearch/issues"
+  },
+  "authors": [
+      {
+          "name": "Foad Yousefi",
+          "email": "foadyousefi@gmail.com",
+          "homepage": "https://frontkom.no"
+      },
+      {
+        "name": "Fábio Neves",
+        "email": "fabio@frontkom.com",
+        "homepage": "https://frontkom.com"
+      },
+      {
+        "name": "Bartosz Jarzyna",
+        "email": "bartosz@netkata.com",
+        "homepage": "https://netkata.com"
+      }
+  ],
+  "autoload": {
+      "psr-4": {
+          "FKRediSearch\\": "src/"
+      }
+  },
+  "minimum-stability": "dev",
+  "require": {
+      "predis/predis": "^1.1"
+  }
+}
