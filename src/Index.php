@@ -8,6 +8,7 @@ use AllopneusRediSearch\Fields\NumericField;
 use AllopneusRediSearch\Fields\TextField;
 use AllopneusRediSearch\Fields\TagField;
 use AllopneusRediSearch\Query\Query;
+use AllopneusRediSearch\Query\SearchResult;
 use RedisException;
 
 class Index
@@ -856,12 +857,44 @@ class Index
 
     /**
      * @param string $query
+     * @param bool   $documentsAsArray
+     *
+     * @return SearchResult
+     */
+    public function search(string $query = '*', bool $documentsAsArray = false): SearchResult
+    {
+        return $this->makeQuery()->search($query, $documentsAsArray);
+    }
+
+    /**
+     * @param string $query
      *
      * @return int
      */
     public function count(string $query = '*'): int
     {
         return $this->makeQuery()->search($query)->getCount();
+    }
+
+    /**
+     * @param string $fieldName
+     * @param array $values
+     * @return Query
+     */
+    public function tagFilter(string $fieldName, array $values): Query
+    {
+        return $this->makeQuery()->tagFilter($fieldName, $values);
+    }
+
+    /**
+     * @param string $fieldName
+     * @param $min
+     * @param $max
+     * @return Query
+     */
+    public function numericFilter(string $fieldName, $min, $max = null): Query
+    {
+        return $this->makeQuery()->numericFilter($fieldName, $min, $max);
     }
 
     /**

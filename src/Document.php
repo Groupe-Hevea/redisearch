@@ -21,6 +21,11 @@ class Document
     protected $replace = FALSE;
 
     /**
+     * @var bool
+     */
+    protected $partial = false;
+
+    /**
      * @var array
      */
     protected $fields = array();
@@ -159,4 +164,21 @@ class Document
         return $this;
     }
 
+    /**
+     * @return bool
+     */
+    public function isPartial(): bool
+    {
+        return $this->partial;
+    }
+
+    /**
+     * @param bool $partial
+     * @return Document
+     */
+    public function setPartial(bool $partial): Document
+    {
+        $this->partial = $partial;
+        return $this;
+    }
 }
