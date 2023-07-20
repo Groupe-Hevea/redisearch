@@ -14,6 +14,8 @@
   },
   "minimum-stability": "stable",
   "require": {
-      "predis/predis": "^1.1"
+      "predis/predis": "^1.1",
+      "ext-redis": "*",
+      "ext-mbstring": "*"
   }
 }
